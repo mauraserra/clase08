@@ -33,11 +33,11 @@
                     var datos = respuesta.data;
                     console.log(datos);
 
-                    var miMapa = L.map("mapa").setView([-33.4188131, -70.61521], 6);
+                    var miMapa = L.map("mapa").setView([0,0], 6);
 
                     L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
                         maxZoom: 18,
-                        id: "mapbox/light-v10",
+                        id: "mapbox/satellite-v9.,
                         tileSize: 512,
                         zoomOffset: -1,
                     }).addTo(miMapa);
