@@ -19,7 +19,7 @@
                 <div id="mapa"></div>
             </main>
             <footer>
-                <p><a href="https://www.servelelecciones.cl/">Datos de Servel Elecciones</a> <a href="#">Nombre Apellido</a> <a href="#">DNO037</a></p>
+                <p><a href="https://www.servelelecciones.cl/">Datos de Servel Elecciones</a> <a href="#">Maura Serra</a> <a href="#">DNO037</a></p>
             </footer>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js" integrity="sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA==" crossorigin="anonymous"></script>
@@ -33,11 +33,11 @@
                     var datos = respuesta.data;
                     console.log(datos);
 
-                    var miMapa = L.map("mapa").setView([0,0], 6);
+                    var miMapa = L.map("mapa").setView([0,0], 0);
 
                     L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
                         maxZoom: 18,
-                        id: "mapbox/dark-v10",
+                        id: 'mapbox/dark-v10',
                         tileSize: 512,
                         zoomOffset: -1,
                     }).addTo(miMapa);
